@@ -1,0 +1,39 @@
+
+
+Html:
+
+<body>
+ <header>
+  <section>
+   <h1>
+   <nav>
+    <a> * 4
+
+Main screen has just the title of books and cover
+
+
+Js:
+
+button ->   nav + logo
+            img
+            random book
+
+storage for books
+    -img
+    -title
+    -id?
+    -tags
+    -date published
+    -favorite?
+
+wishlist
+    -favorite
+    -add / remove
+
+style
+    -dark mode
+    -font size
+
+selecting books
+    -pop out with a new display
+        -with the info in storage

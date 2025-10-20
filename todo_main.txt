@@ -1,0 +1,29 @@
+
+Bookkeeping app;
+
+Includes:
+
+    Books:
+        Title,
+        Author,
+        Genres,
+        Tag?,
+        Published date.
+    
+    Settings:
+        Dark mode, 
+        ?Change font-size(use "em" as a unit)
+    
+    Extra Features:
+        To read list,
+        Randomize book button
+
+
+Style:
+    Try with one html file first, them maybe have a home page,
+    and a books page list, and a wishlist page. 
+    Maybe give the randomizer it's own page?
+    
+    Books:
+        Have them pop out and display like a product. 
+    
