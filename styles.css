@@ -1,0 +1,19 @@
+/*
+Colour: 
+
+
+
+
+*/
+
+:root {
+  --headerColor: var(#ffffff);
+  --paragraphColor: var(#9cb48590);
+  --backgroundColorMain: var(#19754120);
+  --backgroundColorSecondary: var(#242424);
+}
+
+a:link & a {
+  text-decoration: none;
+  color: var(--paragraphColor);
+}
