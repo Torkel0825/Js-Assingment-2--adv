@@ -7,13 +7,110 @@ Colour:
 */
 
 :root {
-  --headerColor: var(#ffffff);
-  --paragraphColor: var(#9cb48590);
-  --backgroundColorMain: var(#19754120);
-  --backgroundColorSecondary: var(#242424);
+  --HeaderColor: var(#ffffff);
+  --ParagraphColor: var(#9cb48590);
+  --BackgroundColorMain: var(#19754120);
+  --BackgroundColorSecondary: var(#242424);
+
+  --TitleFont: var();
+  --ParaFont: var();
+
+  --BookFontFam: var("Segoe UI", Tahoma, Geneva, Verdana, sans-serif);
+  --BookFontSize: var(12px);
+  --x: var(fit-content);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
 a:link & a {
   text-decoration: none;
-  color: var(--paragraphColor);
+  color: var(--ParagraphColor);
 }
+
+.Section-Header {
+  border: 1px dotted #345;
+  background-color: lightblue;
+
+  padding: 2rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0.5rem;
+  font-size: 1rem;
+
+  border: 1px dotted #345;
+}
+
+.book-preview {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  justify-content: center;
+
+  gap: 2rem;
+  margin: 2.5rem;
+
+  border: 1px dotted #345;
+}
+
+#book {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  font-family: var(--BookFontFam);
+  font-size: 1rem;
+
+  border: 2px dotted #345;
+  width: 300px;
+  padding: 10px;
+}
+
+.coverImage {
+  max-height: 100px;
+  max-width: 150px;
+  padding: 10px;
+}
+
+.coverImage > img {
+  float: left;
+  min-width: 100px;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.bookPreviewText {
+  padding: 0.2rem;
+  margin: 0.2rem;
+}
+
+/****************************************************** 
+Dynamic changes to website according to size of website
+*******************************************************/
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  .book-preview {
+    grid-template-columns: repeat(1, 1fr);
+  }
+} /* Mobil */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+  .book-preview {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} /* Nettbrett */
+@media (min-width: 1025px) {
+  body {
+    font-size: 18px;
+  }
+} /* Desktop */
